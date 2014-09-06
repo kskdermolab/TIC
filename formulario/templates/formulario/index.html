@@ -1,0 +1,12 @@
+<html>
+<title>Formulario</title>
+<body>
+
+<form action="{% url 'denunciar' %}" method="post">
+{% csrf_token %}
+{{ form.as_p }}
+<input type="submit" value="Denunciar" />
+</form>
+</body>
+</html>
+
