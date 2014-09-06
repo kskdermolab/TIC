@@ -6,7 +6,6 @@ class FormAdmin(admin.ModelAdmin):
     list_display = ('Nombre', 'Apellido')
     list_filter = ['Apellido', 'Nombre']
     search_fields = ['Nombre', 'Apellido']
-#     date_hierarchy = '' ordenar por fecha
 
 admin.site.register(Form, FormAdmin)
     
